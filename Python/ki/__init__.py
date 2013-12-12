@@ -5070,7 +5070,7 @@ class xKI(ptModifier):
         self.RefreshMiniKIMarkerDisplay()
 
         self.SetBigKIToButtons()
-        
+
         # Hide the invite buttons controls.
         ptGUIControlButton(getControl(kGUI.MarkerFolderInvitePlayer)).hide()
         mtbInvitePlayer = ptGUIControlTextBox(getControl(kGUI.MarkerFolderInvitePlayerTB))
@@ -5728,8 +5728,8 @@ class xKI(ptModifier):
             chatArea.moveCursor(PtGUIMultiLineDirection.kBufferEnd)
             # Hide the chat scroll buttons (should be nothing in chat area yet anyhow).
             chatArea.disableScrollControl()
-            btnUp = ptGUIControlButton(KIMini.dialog.getControlFromTag(kGUI.miniChatScrollUp))
-            btnUp.show()
+            dragChat = ptGUIControlKnob(KIMini.dialog.getControlFromTag(kGUI.miniChatDrag))
+            dragChat.show()
             privateChbox = ptGUIControlCheckBox(KIMini.dialog.getControlFromTag(kGUI.miniPrivateToggle))
             privateChbox.disable()
             # Set the edit box buffer size to something larger.

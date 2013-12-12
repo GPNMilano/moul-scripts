@@ -132,7 +132,7 @@ class kAges:
                "vothol" : "Vothol Gallery"}
     Hide = {"BahroCave", "PelletBahroCave", "Pellet Cave", "LiveBahroCave", "LiveBahroCaves"}
     NoInvite = {"Personal", "Nexus", "Cleft", "AvatarCustomization", "city",
-                "BahroCave", "LiveBahroCave", "LiveBahroCaves", 
+                "BahroCave", "LiveBahroCave", "LiveBahroCaves",
                 "BaronCityOffice", "ErcanaCitySilo", "GreatZero", "Shaft",
                 "Descent", "Spyroom", "Myst"}
     Replace = {"Ercana" : "Er'cana",
@@ -141,7 +141,7 @@ class kAges:
                "Gira" : "Eder Gira",
                "Personal" : "Relto",
               }
-    
+
 ## Constants used for the chat.
 class kChat:
     MaxChatSize = 2048
@@ -149,7 +149,7 @@ class kChat:
     StartNumChatItems = 9
     StartOffScreenLine = 0
     ChatBlankLine = "  \n"
-    
+
     # Chat message types.
     SelfMsg = 1
     BroadcastMsg = 2
@@ -161,7 +161,7 @@ class kChat:
     SystemMessage = 8
     InterAge = 9
     InterAgeSelf = 10
-    
+
     # Chat fading.
     FadeNotActive = 0
     FadeFullDisp = 1
@@ -171,10 +171,10 @@ class kChat:
     FullTickTime = 1.0
     FadeTickTime = 0.2
     TicksOnFade = 4
-    
+
     # Chat fonts.
     FontSizeList = [ 7, 8, 10, 12, 14 ]
-    
+
 ## Constants used for the chronicle.
 class kChron:
     FontSize = "PlayerKIFontSize"
@@ -194,7 +194,7 @@ class kColors:
     AgenBlueDk  = ptColor(0.65, 0.6353, 0.745, 1.0)
     AgenGreenLt = ptColor(0.8745, 1.0, 0.85, 1.0)
     AgenGreenDk = ptColor(0.65, 0.745, 0.6353, 1.0)
-                
+
     DniYellow   = ptColor(0.851, 0.812, 0.576, 1.0)
     DniCyan     = ptColor(0.576, 0.867, 0.851, 1.0)
     DniBlue     = ptColor(0.780, 0.706, 0.870, 1.0)
@@ -206,10 +206,10 @@ class kColors:
 
     DniShowRed  = ptColor(1.0, 0.851, 0.874, 1.0)
     DniHideBlue = ptColor(0.780, 0.706, 0.870, 0.3)
-    
+
     DniShowBtn     = DniShowRed
     DniGhostBtn    = DniHideBlue
-    
+
     # Chat colors (messages and headers).
     ChatMessage             = DniWhite
     ChatHeaderBroadcast     = DniBlue
@@ -219,7 +219,7 @@ class kColors:
     ChatHeaderError         = DniRed
     ChatHeaderNeighbors     = DniPurple
     ChatHeaderBuddies       = DniGreen
-    
+
     DniSelectable           = DniGreen
     DniSelected             = DniWhite
     DniStatic               = DniBlue
@@ -266,10 +266,10 @@ class kGUI:
     MiniMaximizeRGID = 34
     OptionsMenuButtonID = 200
     microChatButton = 100
-    
+
     RolloverLeftID = 998
     RolloverRightID = 999
-    
+
     # miniKI.
     ChatCaretID = 12
     ChatEditboxID = 5
@@ -288,6 +288,7 @@ class kGUI:
     miniChatScrollDown = 52
     miniPlayerListUp = 53
     miniPlayerListDown = 54
+    miniChatDrag = 56
 
     mini7Indicator1 = 71
     mini7Indicator2 = 72
@@ -314,7 +315,7 @@ class kGUI:
     miniMGNewMarker = 1010
     miniMGNewGame = 1011
     miniMGInactive = 1012
-    
+
     # Big KI - right panel.
     BKListMode = 1
     BKJournalExpanded = 2
@@ -325,7 +326,7 @@ class kGUI:
     BKKIExpanded = 7
     BKMarkerListExpanded = 8
     BKQuestionNote = 9
-    
+
     # Big KI - controls.
     BKIPutAwayID = 4
     BKToggleMiniID = 14
@@ -335,7 +336,7 @@ class kGUI:
     BKLMDownButton = 111
     BKDisabledPeopleButton = 300
     BKDisabledGearButton = 301
-    
+
     # Big KI - controls (left).
     BKIIncomingBtn = 70
     BKIFolderLineBtn01 = 71
@@ -344,7 +345,7 @@ class kGUI:
     BKIToIncomingButton = 81
     BKIToFolderButton01 = 82
     BKIToFolderButtonLast = 88
-    
+
     # Big KI - controls (right).
     BKIListModeCreateBtn = 80
     BKIListModeLineBtn01 = 81
@@ -375,12 +376,12 @@ class kGUI:
     BKILMFromOffset = 3
     BKILMIconJournalOffset = 4
     BKILMIconPersonOffset = 5
-    
+
     # Big KI - fields (elongated on mouseover).
     LONGBKIIncomingLine = 591
     LONGBKIFolderLine01 = 592
     LONGBKIFolderLineLast = 598
-    
+
     # Big KI - expanded journal.
     BKIJRNTitleButton = 80
     BKIJRNNoteButton = 81
@@ -393,7 +394,7 @@ class kGUI:
     BKIJRNNote = 93
     BKIJRNFrom = 94
     BKIJRNSentDate = 95
-    
+
     # Big KI - expanded picture.
     BKIPICTitleButton = 80
     BKIPICDeleteButton = 82
@@ -406,14 +407,14 @@ class kGUI:
     BKIPICSentDate = 95
     BKIImageStartX = 112
     BKIImageStartY = 212
-    
+
     # Big KI - expanded player.
     BKIPLYPlayerIDEditBox = 80
     BKIPLYDeleteButton = 82
     BKIPLYName = 90
     BKIPLYID = 91
     BKIPLYDetail = 92
-    
+
     # Big KI - expanded KI settings.
     BKIKIFontSize=80
     BKIKIFadeTime = 81
@@ -423,7 +424,7 @@ class kGUI:
     BKIKIFontSizeText = 580
     BKIKIFadeTimeText = 581
     BKIKIOnlyPMText = 590
-    
+
     # Big KI - expanded volume.
     BKISoundFXVolSlider = 80
     BKIMusicVolSlider = 81
@@ -431,7 +432,7 @@ class kGUI:
     BKIAmbienceVolSlider = 83
     BKIMicLevelSlider = 84
     BKIGUIVolSlider = 85
-    
+
     # Big KI - expanded Age owner settings.
     BKAgeOwnerTitleTB = 90
     BKAgeOwnerTitleBtn = 91
@@ -442,7 +443,7 @@ class kGUI:
     BKAgeOwnerGUIDTB = 96
     BKAgeOwnerDescription = 99
     BKAgeOwnerDescriptionTitle = 510
-    
+
     # Big KI - expanded marker folder.
     MarkerFolderTitleText = 80
     MarkerFolderTitleBtn = 81
@@ -489,7 +490,7 @@ class kGUI:
     BKEditFieldJRNTitle = 0
     BKEditFieldJRNNote = 1
     BKEditFieldPICTitle = 2
-    
+
     # Yes/No dialog.
     YesNoTextID=12
     YesButtonID = 10
@@ -505,7 +506,7 @@ class kGUI:
     YNKIFull = 4
     YNWanaPlay = 5
     YNNoReason = 6
-    
+
     # Question note dialog.
     QNTitle = 100
     QNMessage = 101
@@ -518,7 +519,7 @@ class kGUI:
     NotOffering = 0
     Offeree = 1
     Offerer = 2
-    
+
     # Marker game creation dialog.
     CreateMarkerGameNameEB = 1000
     MarkerGameType1 = 1001
@@ -530,10 +531,10 @@ class kGUI:
     MarkerGameLabel2 = 1007
     MarkerGameLabel3 = 1008
     MarkerGameStates = { MarkerGameType1 : 0, "UNKNOWN" : 1, MarkerGameType2 : 2, MarkerGameType3 : 3 }
-    
+
     # Pellet score upload button.
     PelletScoreButton = 1020
-    
+
     # Scrolling up and down.
     ScrollDown = 0
     ScrollUp = 1
@@ -555,12 +556,12 @@ class kImages:
 
 ## Constants for the KI.
 class kKI:
-    
+
     # Folders.
     JournalFolder = 0
     PlayersFolder = 1
     ConfigFolder = 2
-    
+
     # State settings.
     ClosedKI = 0
     miniKI = 1
@@ -575,7 +576,7 @@ class kLoc:
         (PtGetLocalizedString("KI.MarkerGame.Popup5Min"), 300),
         (PtGetLocalizedString("KI.MarkerGame.Popup10Min"), 600),
     ]
-    
+
     OKDialogDict = {
         "" :                                                                        PtGetLocalizedString("KI.Errors.EmptyError"),               #01
         "TERMINATED: Server LogOff. Reason: Logged In Elsewhere" :                  PtGetLocalizedString("KI.Errors.LoggedInElsewhere"),        #02
